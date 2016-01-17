@@ -30,7 +30,15 @@ if (isset($_GET['sub'])){
     $email = $_GET['email'];
     $pass = $_GET['pass'];
 
-    $_SESSION=['email']=$email;
+    $session = $_SESSION['email']=$email;
+
+    echo "Welcome: " . $session;
+}
+
+echo "</br><a href='sessions.php?logout'>Log Out</a>";
+
+if (isset($_GET['logout'])){
+    session_destroy();
 }
 
 ?>

@@ -5,7 +5,7 @@
       <paths name="TheArk">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/var/www/html" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/var/www/theark.io/html" />
           </mappings>
         </serverdata>
       </paths>

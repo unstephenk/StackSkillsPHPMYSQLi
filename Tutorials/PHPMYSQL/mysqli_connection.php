@@ -7,7 +7,7 @@
  * Time: 4:32 PM
  */
 
-$con = mysqli_connect("localhost","root","NOPE!","StackSkillsPHPMYSQLi") or die("Connection Failed");
+$con = mysqli_connect("localhost","root","NOPE","StackSkillsPHPMYSQLi") or die("Connection Failed");
 
 ?>
 
@@ -28,6 +28,10 @@ $con = mysqli_connect("localhost","root","NOPE!","StackSkillsPHPMYSQLi") or die(
 <?php
 
 if (isset($_POST['sub'])){
+
+    $name = $_POST['name'];
+    $pass = $_POST['pass'];
+    $email = $_POST['email'];
 
     $insert = "insert into users (name, pass, email) values ('$name','$pass', '$email')";
     $run = mysqli_query($con,$insert);

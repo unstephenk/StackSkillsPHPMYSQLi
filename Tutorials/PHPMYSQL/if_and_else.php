@@ -7,7 +7,7 @@
 <body>
 
 <form action="if_and_else.php" method="post">
-    <input type="password" name="pass" />
+    <input type="password" name="pass" placeholder="pass"/>
     <input type="submit" name="sub" value="Submit"/>
 </form>
 <?php

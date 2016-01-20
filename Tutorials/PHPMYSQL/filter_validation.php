@@ -6,11 +6,11 @@
 </head>
 <body>
 
-<form action="" method="post">
+<!--<form action="" method="post">
     <input type="text" name="url" placeholder="http://" />
     <input type="text" name="email" placeholder="example@example.com" />
     <input type="submit" name="sub" value="Submit"/>
-</form>
+</form>-->
 
 <?php
 /**
@@ -20,7 +20,9 @@
  * Time: 3:58 PM
  */
 
-if (isset($_POST['sub'])){
+echo "The lines in this code have been commented out for safety reasons."
+
+/*if (isset($_POST['sub'])){
 
     $url = $_POST['url'];
     $email = $_POST['email'];
@@ -39,7 +41,7 @@ if (isset($_POST['sub'])){
         echo "<h2>This is NOT a valid email</h2>";
     }
 
-}
+}*/
 
 ?>
 

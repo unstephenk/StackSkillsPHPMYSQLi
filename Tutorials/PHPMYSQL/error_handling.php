@@ -14,14 +14,17 @@
  * Time: 10:20 PM
  */
 
+echo "The lines in this code have been commented out for safety reasons."
+
+
 /*$file = fopen("stephen.txt", "r") or die("Unable to read file.");*/
 
-if (!file_exists("create_a_test_file_data.txt")){
+/*if (!file_exists("create_a_test_file_data.txt")){
     die("Unable to read the file.");
 }
 else{
     $file = fopen("create_a_test_file_data.txt", "r");
-}
+}*/
 
 
 

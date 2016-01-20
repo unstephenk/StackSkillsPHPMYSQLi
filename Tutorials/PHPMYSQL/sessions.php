@@ -18,7 +18,10 @@ session_start();
  * Time: 3:11 PM
  */
 
-include("sessions_form.php")
+echo "The lines in this code have been commented out for safety reasons."
+
+
+/*include("sessions_form.php");*/
 
 ?>
 

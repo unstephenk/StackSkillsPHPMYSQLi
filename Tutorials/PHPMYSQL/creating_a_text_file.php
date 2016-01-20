@@ -14,6 +14,8 @@
  * Time: 10:27 PM
  */
 
+echo "The lines in this code have been commented out for safety reasons."
+
 /*$filename = "create_a_text_file_data.txt";
 $file = fopen($filename, "w") or die("Unable to open file!");
 

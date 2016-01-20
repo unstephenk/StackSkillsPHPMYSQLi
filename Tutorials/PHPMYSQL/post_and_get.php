@@ -14,7 +14,10 @@
  * Date: 1/17/2016
  * Time: 2:46 PM
  */
-require("post_and_get_form.html");
+
+echo "The lines in this code have been commented out for safety reasons."
+
+/*require("post_and_get_form.html");*/
 
 ?>
 

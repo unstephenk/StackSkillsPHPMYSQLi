@@ -6,10 +6,10 @@
 </head>
 <body>
 
-<form action="if_and_else.php" method="post">
+<!--<form action="if_and_else.php" method="post">
     <input type="password" name="pass" placeholder="pass"/>
     <input type="submit" name="sub" value="Submit"/>
-</form>
+</form>-->
 <?php
 /**
  * Created by PhpStorm.
@@ -18,7 +18,9 @@
  * Time: 2:31 PM
  */
 
-if(isset($_POST['sub'])){
+echo "The lines in this code have been commented out for safety reasons."
+
+/*if(isset($_POST['sub'])){
 
     $pass = $_POST['pass'];
     echo "current value:  " . $pass;
@@ -33,7 +35,7 @@ if(isset($_POST['sub'])){
         echo "<h3>Your password has been accepted";
     }
 
-}
+}*/
 
 
 ?>

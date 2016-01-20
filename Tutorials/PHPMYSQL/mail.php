@@ -14,17 +14,19 @@
  * Time: 3:47 PM
  */
 
+echo "The lines in this code have been commented out for safety reasons."
+
 /*mail("Receiver: sendingtoyou@gmail.com", "Subject: Hello There",
     "Body: How are you doing?", "From: unstephenk@gmail.com");*/
 
-$to="skuehl@utdallas.edu";
+/*$to="skuehl@utdallas.edu";
 $body="How are you doing?";
 $subject="Check this out!";
 $from="unstephenk@gmail.com";
 
 mail($to, $subject, $body, $from);
 
-echo "<h2>Email has been sucessfully sent</h2>";
+echo "<h2>Email has been sucessfully sent</h2>";*/
 
 ?>
 

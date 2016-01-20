@@ -15,9 +15,12 @@
  * Time: 2:31 PM
  */
 
-include("table.html");
+echo "The lines in this code have been commented out for safety reasons."
+
+
+/*include("table.html");*/
 /*include_once("table.html");*/
-require("include_and_require_form.html");
+/*require("include_and_require_form.html");*/
 /*require_once("include_and_require_form.html");*/
 
 ?>

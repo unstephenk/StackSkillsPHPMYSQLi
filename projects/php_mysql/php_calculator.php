@@ -18,7 +18,7 @@
         <option>-</option>
         <option>*</option>
         <option>/</option>
-    </select><br/>
+    </select>
     <input type="submit" name="cal" value="Calculate" /><br/>
 
 </form><hr>
@@ -30,6 +30,33 @@
  * Date: 1/22/2016
  * Time: 10:29 AM
  */
+
+if(isset($_POST['cal'])){
+    $value1 = $_POST['value1'];
+    $value2 = $_POST['value2'];
+    $opt = $_POST['operator'];
+
+    if($opt=='+'){
+        echo "<center><h2>Your Answer is: <b style='color:red;'>";
+        echo $value1 + $value2;
+        echo "</b></h2></center>";
+    }
+    if($opt=='*'){
+        echo "<center><h2>Your Answer is: <b style='color:red;'>";
+        echo $value1*$value2;
+        echo "</b></h2></center>";
+    }
+    if($opt=='-'){
+        echo "<center><h2>Your Answer is: <b style='color:red;'>";
+        echo $value1 - $value2;
+        echo "</b></h2></center>";
+    }
+    if($opt=='/'){
+        echo "<center><h2>Your Answer is: <b style='color:red;'>";
+        echo round($value1/$value2);
+        echo "</b></h2></center>";
+    }
+}
 
 ?>
 

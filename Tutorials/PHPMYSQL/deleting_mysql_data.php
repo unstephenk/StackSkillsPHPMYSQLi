@@ -7,7 +7,7 @@
  * Time: 11:19 PM
  */
 
-$con = mysqli_connect("localhost","root","NOPE.","StackSkillsPHPMYSQLi") or die("Connection Failed");
+$con = mysqli_connect("localhost","root","NOPE","StackSkillsPHPMYSQLi") or die("Connection Failed");
 
 ?>
 
@@ -74,11 +74,26 @@ $con = mysqli_connect("localhost","root","NOPE.","StackSkillsPHPMYSQLi") or die(
             <td><?php echo $user_pass ?></td>
             <td><?php echo $user_email ?></td>
             <td><a href="deleting_mysql_data.php">Edit</a></td>
-            <td><a href="deleting_mysql_data.php">Delete</a></td>
+            <td><a href="deleting_mysql_data.php?delete=<?php echo $user_id; ?>">Delete</a></td>
         </tr>
     <?php  }    ?>
 
 </table>
+
+<?php
+if(isset($_GET['delete'])){
+    $delete_id = $_GET['delete'];
+
+    $delete = "delete from users where id='$delete_id'";
+
+    $run_delete = mysqli_query($con,$delete);
+
+    if ($run_delete){
+        echo "<script>alert('A user has been deleted!')</script>";
+        echo "<script>window.open('deleting_mysql_data.php','_self')</script>";
+    }
+}
+?>
 
 </body>
 </html>

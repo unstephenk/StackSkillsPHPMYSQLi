@@ -16,8 +16,8 @@ $(document).ready(function(){
         $('h1').replaceWith('<h3>Hello World</h3>');
 ;    })*/
 
-    $('.myLink').click(function(){
+    /*$('.myLink').click(function(){
         $('h1').css('font-size','40px');
-    });
+    });*/
 
 });

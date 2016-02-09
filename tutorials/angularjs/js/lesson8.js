@@ -1,6 +1,11 @@
 var app = angular.module('minmax',[]);
 
 app.controller('PersonsController',function($scope){
+	$scope.selectedIndex = null;
+
+	$scope.selectPerson = function(index){
+		$scope.selectedIndex = index;
+	};
 
 // This is the sample data for this lesson
 $scope.persons = [

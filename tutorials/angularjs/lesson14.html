@@ -1,0 +1,58 @@
+<!DOCTYPE html >
+<html lang="en"
+      ng-app="codecraft">
+<head>
+    <title>Understanding Scope: Root Scope</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lesson14.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="root">
+                <label>
+                    <input type="text"
+                           ng-model="name"/>
+                </label>
+                <p>{{name}}</p>
+
+                <div class="row">
+                    <div class="">
+                        <div class="parent"
+                             ng-controller="ParentController">
+                            <label>
+                                <input type="text"
+                                       ng-model="name"/>
+                            </label>
+                            <p>{{name}}</p>
+
+                            <div class="child"
+                                 ng-controller="ChildController">
+                                <label>
+                                    <input type="text"
+                                           ng-model="name"/>
+                                </label>
+                                <button class="btn"
+                                        ng-click="reset()">Reset
+                                </button>
+                                <p>{{name}}</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="js/lesson14.js"></script>
+</body>
+</html>

@@ -79,46 +79,7 @@ if(isset($_POST['convert'])) {
 <html>
 	<head>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				$("input[name='send']").click(function() {
-                                                $(".status").html("");
-                                                $(".pin").html("");
-						$(".message").html("");
-
-					$(".require").each(function(){
-						if($(this).val() == ""){
-							alert("Please input require value");
-							$(this).focus();
-							return;
-						}
-					});
-					var userid = $("#userid").val();
-					var title = $("#title").val();
-					var pin = $("#pin").val();
-					var detail = $("#detail").val();
-					var longitude = $("#longitude").val();
-					var latitude = $("#latitude").val();
-					$.post(
-					"parse.php",
-					{
-						userid : userid,
-						title : title,
-						pin : pin,
-						detail : detail,
-						longitude : longitude,
-						latitude : latitude
-					},
-					function(response){
-						$(".pin").html(pin);
-						$(".status").html(response.status);
-						$(".message").html(response.message);
-					},
-						"json"
-					);
-				});
-			});
-		</script>
+		<!--Javascript removed-->
 	</head>
 
 	<body>

@@ -2,10 +2,9 @@
 <html lang="en"
       ng-app="codecraft" >
 <head >
-	<title >Scope</title >
-	<link href="../libs/bootstrap/dist/css/bootstrap.min.css"
-	      rel="stylesheet" >
-	<link href="main.css"
+	<title >Understanding Scope: Child Scope</title >
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/lesson13.css"
 	      rel="stylesheet" >
 </head >
 
@@ -23,13 +22,24 @@
 					       ng-model="name" />
 				</label >
 				<p >{{name}}</p >
+
+				<div class="child"
+					 ng-controller="ChildController">
+					<label>
+						<input type="text" ng-model="name" />
+					</label>
+					<button class="btn" ng-click="reset()">Reset</button>
+					<p>{{ name }}</p>
+
+				</div>
+
 			</div >
 		</div >
 	</div >
 </div >
 
 
-<script src="../libs/angular/angular.min.js" ></script >
-<script src="main.js" ></script >
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="js/lesson13.js" ></script >
 </body >
 </html >
